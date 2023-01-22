@@ -1,0 +1,30 @@
+.wd-bg-color-black {
+  background-color: black;
+}
+
+.wd-border-style {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.wd-border-color {
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-left-offset {
+    margin-left: 16px;
+}
+
+.wd-search-container {
+  display: flex;
+  background-color: ;
+  border-radius: 20px;
+}
+
+.wd-search-container input[type="text"] {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 14px;
+  width: 80%;
+}
