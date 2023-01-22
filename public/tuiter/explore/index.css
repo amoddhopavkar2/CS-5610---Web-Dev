@@ -18,15 +18,21 @@
 .wd-search-container {
   display: flex;
   background-color: rgb(32, 35, 39);
-  border-radius: 20px;
   border: none;
+  border-radius: 20px;
 }
 
 .wd-search-container input[type="text"] {
-  border: transparent;
-  border-radius: 20px;
-  box-sizing: border-box;
   background-color: transparent;
   color: white;
-  padding: 14px;
+  border: inherit;
+  border-radius: inherit;
+  padding: 14px;  
+}
+
+.wd-search-container a {
+  position: absolute;
+  right: 12px;
+  padding: 10px;
+  color: rgb(29 161 242);
 }
