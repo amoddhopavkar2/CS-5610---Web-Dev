@@ -8,26 +8,28 @@
 }
 
 .wd-border-color {
+  border: transparent;
   border-color: rgb(47, 51, 54);
 }
 
 .wd-left-offset {
-    margin-left: 16px;
+  margin-left: 16px;
 }
 
 .wd-search-container {
-  display: flex;
   background-color: rgb(32, 35, 39);
   border: none;
   border-radius: 20px;
+  display: flex;
 }
 
-.wd-search-container input[type="text"] {
+.wd-search-container-input {
   background-color: transparent;
   color: white;
-  border: inherit;
-  border-radius: inherit;
-  padding: 14px;  
+  border: none;
+  border-radius: 20px;
+  padding: 14px;
+  width: 90%;
 }
 
 .wd-settings-gear {
@@ -35,4 +37,5 @@
   right: 12px;
   padding: 10px;
   color: rgb(29 161 242);
+  font-size: 24px;
 }
