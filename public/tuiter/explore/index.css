@@ -51,4 +51,7 @@
 .wd-link-container-highlighted {
   color: rgb(29, 161, 242);
   border-bottom: 2px solid rgb(29, 161, 242);
+  font-size: 15px;
+  padding: 16px;
+  text-decoration: none;
 }
