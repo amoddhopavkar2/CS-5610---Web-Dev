@@ -1,5 +1,6 @@
 .wd-bg-color-black {
   background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .wd-border-style {
@@ -38,4 +39,16 @@
   padding: 10px;
   color: rgb(29 161 242);
   font-size: 24px;
+}
+
+.wd-link-container {
+  font-size: 15px;
+  padding: 16px;
+  color: rgb(110, 118, 125);
+  text-decoration: none;
+}
+
+.wd-link-container-highlighted {
+  color: rgb(29, 161, 242);
+  border-bottom: 2px solid rgb(29, 161, 242);
 }
