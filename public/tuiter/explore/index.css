@@ -33,6 +33,10 @@
   width: 90%;
 }
 
+.wd-vertical-spacing {
+  padding: 16px;
+}
+
 .wd-settings-gear {
   position: absolute;
   right: 12px;
