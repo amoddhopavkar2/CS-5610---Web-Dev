@@ -22,6 +22,7 @@
   border: none;
   border-radius: 20px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .wd-search-container-input {
@@ -58,4 +59,27 @@
   font-size: 15px;
   padding: 16px;
   text-decoration: none;
+}
+
+.wd-suggested-posts {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.wd-suggested-post-title {
+  color: white;
+  padding: 5px;
+}
+
+.wd-post {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.wd-topic-tuits {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+  padding: 5px;
 }
