@@ -67,9 +67,16 @@
   padding: 5px;
 }
 
+.wd-topic-tuits {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+  padding: 5px;
+}
+
 .wd-suggested-post-title {
   color: white;
   padding: 5px;
+  font-weight: bold;
 }
 
 .wd-post {
@@ -78,8 +85,23 @@
   padding: 5px;
 }
 
-.wd-topic-tuits {
+.wd-suggested-post-article-title {
   font-size: 13px;
-  color: rgb(110, 118, 125);
+  color: white;
+  font-weight: bold;
   padding: 5px;
+}
+
+.wd-suggested-post-article-date {
+  color: rgb(110, 118, 125);
+  font-weight: normal;
+  padding-left: 15px;
+}
+
+.wd-suggested-post-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  margin-right: 16px;
+  float: right;
 }
