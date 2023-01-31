@@ -1,106 +1,169 @@
-.wd-bg-color-black {
+body {
   background-color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.wd-border-style {
-  border-width: 1px;
-  border-style: solid;
+.wd-body-container {
+  border-right: 2px solid rgb(49, 51, 54);
+  border-left: 2px solid rgb(49, 51, 54);
+  margin: 0% 10% 0% 10%;
+  display: flex; /* or inline-flex */
+  flex-direction: column;
+  background-color: black;
+  justify-content: space-between;
 }
 
-.wd-border-color {
-  border-color: rgb(47, 51, 54);
-}
-
-.wd-left-offset {
-  margin-left: 16px;
-}
-
-.wd-search-container {
-  background-color: rgb(32, 35, 39);
-  border: none;
-  border-radius: 20px;
+.wd-search-bar {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.wd-search-container-input {
-  background-color: transparent;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  padding: 14px;
-  width: 90%;
-}
-
-.wd-vertical-spacing {
-  padding: 16px;
-}
-
-.wd-settings-gear {
-  position: absolute;
-  right: 12px;
-  padding: 10px;
-  color: rgb(29 161 242);
-  font-size: 24px;
-}
-
-.wd-link-container {
-  font-size: 15px;
-  padding: 16px;
-  color: rgb(110, 118, 125);
-  text-decoration: none;
-}
-
-.wd-link-container-highlighted {
-  color: rgb(29, 161, 242);
-  border-bottom: 2px solid rgb(29, 161, 242);
-  font-size: 15px;
-  padding: 16px;
-  text-decoration: none;
-}
-
-.wd-suggested-posts {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 5px;
-}
-
-.wd-topic-tuits {
-  font-size: 13px;
-  color: rgb(110, 118, 125);
-  padding: 5px;
-}
-
-.wd-suggested-post-title {
-  color: white;
-  padding: 5px;
-  font-weight: bold;
-}
-
-.wd-post {
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  margin-bottom: 10px;
-  padding: 5px;
+  margin-top: 2%;
 }
 
-.wd-suggested-post-article-title {
-  font-size: 13px;
-  color: white;
-  font-weight: bold;
-  padding: 5px;
+.wd-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 98%;
+  padding-left: 2%;
+  text-align: center;
+  font-weight: 600;
 }
 
-.wd-suggested-post-article-date {
+.wd-margin-top-30 {
+  margin-top: 30px;
+}
+
+.wd-nav-bar-element {
+  height: 40px;
+  width: 16.33%;
+}
+
+.wd-nav-bar-link {
+  padding: 16px;
+  font-size: 15px;
   color: rgb(110, 118, 125);
-  font-weight: normal;
-  padding-left: 15px;
 }
 
-.wd-suggested-post-image {
-  width: 100px;
+.wd-nav-bar-link:hover {
+  cursor: pointer;
+  height: 40px;
+  color: rgb(29, 161, 242) !important;
+  border-bottom: 3px solid rgb(29, 161, 242);
+}
+
+.wd-active {
+  color: rgb(29, 161, 242) !important;
+  border-bottom: 3px solid rgb(29, 161, 242);
+}
+
+.wd-suggested-post-article-tuits {
+  font-size: 14px;
+}
+
+.wd-search-bar-search-box {
+  display: flex;
+  align-items: center;
+  background-color: rgb(33, 35, 39);
+  padding: 10px;
+  border-radius: 20px;
+  width: 88%;
+  margin-left: 45px;
+}
+
+.wd-search-bar-search-box-input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  color: white;
+  font-size: 15px;
+}
+
+.wd-search-bar-gear-icon {
+  margin-right: 12px;
+  margin-top: 6px;
+}
+
+.wd-nav-bar-element {
+  color: white;
+  text-align: left;
+}
+
+.wd-suggested-post {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.wd-suggested-post-article {
+  width: 98%;
+}
+
+.wd-suggested-post-article > p {
+  color: rgb(110, 118, 125);
+}
+
+.wd-suggested-post-article-topic {
+  font-size: 15px;
+}
+
+.wd-separator {
+  width: 100%;
+  background-color: rgb(23, 24, 29);
+  height: 10px;
+  border-top: 3px solid rgb(49, 51, 54);
+}
+
+.wd-suggested-post-container {
+  color: white;
+  padding: 12px;
+  border-top: 2px solid rgb(48, 50, 53);
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  display: block;
+  font-size: 17px;
+  margin-block-start: 4px;
+  margin-block-end: 4px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.wd-suggested-post-article-more-options {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.wd-additional-post-article-img {
   height: 100px;
-  border-radius: 16px;
-  margin-right: 16px;
-  float: right;
+  width: 100px;
+  border-radius: 10%;
+}
+
+.wd-additional-post-article-container {
+  color: white;
+  padding: 16px;
+  border-top: 2px solid rgb(48, 50, 53);
+  display: flex;
+  justify-content: space-between;
+}
+
+.wd-additional-post-title {
+  width: 80%;
+}
+
+.wd-additional-post-time {
+  font-size: 15px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-search-icon {
+  padding-right: 15px;
+  padding-left: 5px;
+  color: white;
 }

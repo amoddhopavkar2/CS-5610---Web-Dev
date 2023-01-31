@@ -1,71 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link href="index.css" rel="stylesheet" />
+<head>
+    <script
+            src="https://kit.fontawesome.com/dda9471386.js"
+            crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
     />
+    <link href="index.css" rel="stylesheet"/>
     <title>Explore</title>
-  </head>
-  <body
-    class="wd-bg-color-black wd-border-style wd-border-color wd-left-offset"
-  >
-    <div class="wd-search-container">
-      <form>
-        <input
-          class="wd-search-container-input"
-          type="text"
-          placeholder="Search Tuiter"
-        />
-      </form>
-      <a class="wd-settings-gear" href="explore-settings.html"
-        ><i class="fa fa-gear"></i
-      ></a>
+</head>
+
+<body>
+<div class="wd-body-container">
+    <div class="wd-search-bar">
+        <div class="wd-search-bar-search-box">
+            <i class="fa-sharp fa-solid fa-magnifying-glass wd-search-icon"></i>
+            <input
+                    class="wd-search-bar-search-box-input"
+                    type="text"
+                    placeholder="Search Tuiter"
+            />
+        </div>
+        <div class="wd-search-bar-gear-icon">
+            <a href="explore-settings.html">
+                <img src="../assets/gear.svg"/>
+            </a>
+        </div>
     </div>
 
-    <div class="wd-vertical-spacing">
-      <a href="#" class="wd-link-container-highlighted">For you</a>
-      <a href="#" class="wd-link-container">Trending</a>
-      <a href="#" class="wd-link-container">COVID-19</a>
-      <a href="#" class="wd-link-container">News</a>
-      <a href="#" class="wd-link-container">Sports</a>
-      <a href="#" class="wd-link-container">Enter</a>
+    <div class="wd-nav-bar wd-margin-top-30">
+        <div class="wd-nav-bar-element">
+            <a class="wd-nav-bar-link wd-active">For You</a>
+        </div>
+        <div class="wd-nav-bar-element">
+            <a class="wd-nav-bar-link">Trending</a>
+        </div>
+        <div class="wd-nav-bar-element">
+            <a class="wd-nav-bar-link">COVID-19</a>
+        </div>
+        <div class="wd-nav-bar-element">
+            <a class="wd-nav-bar-link">News</a>
+        </div>
+        <div class="wd-nav-bar-element">
+            <a class="wd-nav-bar-link">Sports</a>
+        </div>
+        <div class="wd-nav-bar-element">
+            <a class="wd-nav-bar-link">Entertainment</a>
+        </div>
     </div>
 
-    <div class="wd-suggested-posts">
-      <div class="wd-post wd-vertical-spacing">
-        <div class="wd-topic-tuits">Trending in Science</div>
-        <div class="wd-suggested-post-title">
-          The Latest Breakthrough in Quantum Computing
-        </div>
-        <div class="wd-topic-tuits">55.1K Tuits</div>
-      </div>
+    <div class="wd-separator"></div>
 
-      <div class="wd-post">
-        <div class="wd-topic-tuits">Sports - Trending</div>
-        <div class="wd-suggested-post-title">The Big Game: A Recap</div>
-        <div class="wd-topic-tuits">101K Tuits</div>
-      </div>
+    <div class="wd-suggested-post">
+        <div class="wd-suggested-post-container">
+            <div class="wd-suggested-post-article">
+                <p class="wd-suggested-post-article-topic">Trending in Science</p>
+                <h3 class="wd-suggested-post-article-title">Starship</h3>
+                <p class="wd-suggested-post-article-tuits">55.5K Tuits</p>
+            </div>
+            <div class="wd-suggested-post-article-more-options">...</div>
+        </div>
 
-      <div class="wd-post">
-        <div class="wd-topic-tuits">Trending in United States</div>
-        <div class="wd-suggested-post-title">
-          The Impact of the Latest Presidential Election
+        <div class="wd-suggested-post-container">
+            <div class="wd-suggested-post-article">
+                <p class="wd-suggested-post-article-topic">
+                    Sports · Trending
+                </p>
+                <h3 class="wd-suggested-post-article-title">Joe Rogan</h3>
+                <p class="wd-suggested-post-article-tuits">5,218 Tweets</p>
+            </div>
+            <div class="wd-suggested-post-article-more-options">...</div>
         </div>
-        <div class="wd-topic-tuits">9,218 Tuits</div>
-      </div>
-
-      <div class="wd-post">
-        <div class="wd-suggested-post-article-title">
-          The New York Times
-          <span class="wd-suggested-post-article-date"> · Yesterday</span>
-        </div>
-        <img class="wd-suggested-post-image" src="res/cnn.png">
-        <div class="wd-suggested-post-title">
-          CNN's Cuomo Connundrum: A star anchor with a brother in trouble
-        </div>
-      </div>
     </div>
-  </body>
+
+    <div class="wd-additional-post">
+        <div class="wd-additional-post-article-container">
+            <div class="wd-additional-post-article">
+                <p class="wd-additional-post-article-topic">
+                    The New York Times
+                    <i class="fa-solid fa-circle-check"></i> &nbsp;<span
+                        class="wd-additional-post-time"> · Yesterday</span
+                >
+                </p>
+                <h3 class="wd-additional-post-title">
+                    CNN's Cuomo conundrum: A star anchor with a brother in trouble
+                </h3>
+            </div>
+            <div class="wd-additional-post-more-options">
+                <img
+                        class="wd-additional-post-article-img"
+                        src="../assets/cnn.png"
+                />
+            </div>
+        </div>
+    </div>
+
+    <div class="wd-suggested-post">
+        <div class="wd-suggested-post-container">
+            <div class="wd-suggested-post-article">
+                <p class="wd-suggested-post-article-topic">COVID-19 · Live
+                </p>
+                <h3 class="wd-suggested-post-article-title">COVID-19: News and updates for Massachusetts</h3>
+            </div>
+            <div class="wd-E_article-options">
+                <img
+                        class="wd-additional-post-article-img"
+                        src="../assets/covid.png"
+                />
+            </div>
+        </div>
+
+        <div class="wd-additional-post">
+            <div class="wd-additional-post-article-container">
+                <div class="wd-additional-post-article">
+                    <p class="wd-additional-post-article-topic">
+                        Bloomberg Opinion
+                        <i class="fa-solid fa-circle-check"></i> &nbsp;<span
+                            class="wd-additional-post-time"
+                    > · Now</span
+                    >
+                    </p>
+                    <h3 class="wd-additional-post-title">
+                        Thinking about getting a booster? Read this first.
+                    </h3>
+                </div>
+                <div class="wd-additional-post-more-options">
+                    <img
+                            class="wd-additional-post-article-img"
+                            src="../assets/bloomberg.png"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="wd-suggested-post">
+            <div class="wd-suggested-post-container">
+                <div class="wd-suggested-post-article">
+                    <p class="wd-suggested-post-article-topic">Trending in United States</p>
+                    <h3 class="wd-suggested-post-article-title">Wonder Bread</h3>
+                    <p class="wd-suggested-post-article-tuits">1,259 Tuits</p>
+                </div>
+                <div class="wd-suggested-post-article-more-options">...</div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
