@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script
-            src="https://kit.fontawesome.com/dda9471386.js"
-            crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
-            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            href="../../vendors/bootstrap/css/bootstrap.min.css"
+            rel="stylesheet"
+    />
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             rel="stylesheet"
     />
     <link href="index.css" rel="stylesheet"/>
@@ -16,137 +14,55 @@
 </head>
 
 <body>
-<div class="wd-body-container">
-    <div class="wd-search-bar">
-        <div class="wd-search-bar-search-box">
-            <i class="fa-sharp fa-solid fa-magnifying-glass wd-search-icon"></i>
-            <input
-                    class="wd-search-bar-search-box-input"
-                    type="text"
-                    placeholder="Search Tuiter"
-            />
-        </div>
-        <div class="wd-search-bar-gear-icon">
-            <a href="explore-settings.html">
-                <img src="../assets/gear.svg"/>
-            </a>
-        </div>
-    </div>
-
-    <div class="wd-nav-bar wd-margin-top-30">
-        <div class="wd-nav-bar-element">
-            <a class="wd-nav-bar-link wd-active">For You</a>
-        </div>
-        <div class="wd-nav-bar-element">
-            <a class="wd-nav-bar-link">Trending</a>
-        </div>
-        <div class="wd-nav-bar-element">
-            <a class="wd-nav-bar-link">COVID-19</a>
-        </div>
-        <div class="wd-nav-bar-element">
-            <a class="wd-nav-bar-link">News</a>
-        </div>
-        <div class="wd-nav-bar-element">
-            <a class="wd-nav-bar-link">Sports</a>
-        </div>
-        <div class="wd-nav-bar-element">
-            <a class="wd-nav-bar-link">Entertainment</a>
-        </div>
-    </div>
-
-    <div class="wd-separator"></div>
-
-    <div class="wd-suggested-post">
-        <div class="wd-suggested-post-container">
-            <div class="wd-suggested-post-article">
-                <p class="wd-suggested-post-article-topic">Trending in Science</p>
-                <h3 class="wd-suggested-post-article-title">Starship</h3>
-                <p class="wd-suggested-post-article-tuits">55.5K Tuits</p>
-            </div>
-            <div class="wd-suggested-post-article-more-options">...</div>
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-xxl-2">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="fa-brands fa-twitter"></i>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa-solid fa-solid fa-house"></i> Home
+                </li>
+                <li class="list-group-item active">
+                    <i class="fa-solid fa-hashtag"></i> Explore
+                </li>
+                <li class="list-group-item">
+                    <i class="fa-solid fa-bell"></i> Notifications
+                </li>
+                <li class="list-group-item">
+                    <i class="fa-solid fa-envelope"></i> Messages
+                </li>
+                <li class="list-group-item">
+                    <i class="fa-solid fa-bookmark"></i> Bookmarks
+                </li>
+                <li class="list-group-item">
+                    <i class="fa-solid fa-list"></i> Lists
+                </li>
+                <li class="list-group-item">
+                    <i class="fa-solid fa-user"></i> Profile
+                </li>
+                <li class="list-group-item">
+              <span class="fa-stack fa-lg wd-fa-resize">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-ellipsis fa-inverse fa-stack-1x"></i>
+              </span>
+                    More
+                </li>
+            </ul>
         </div>
 
-        <div class="wd-suggested-post-container">
-            <div class="wd-suggested-post-article">
-                <p class="wd-suggested-post-article-topic">
-                    Sports · Trending
-                </p>
-                <h3 class="wd-suggested-post-article-title">Joe Rogan</h3>
-                <p class="wd-suggested-post-article-tuits">5,218 Tweets</p>
+        <div class="col-xxl-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search Tuiter">
             </div>
-            <div class="wd-suggested-post-article-more-options">...</div>
-        </div>
-    </div>
-
-    <div class="wd-additional-post">
-        <div class="wd-additional-post-article-container">
-            <div class="wd-additional-post-article">
-                <p class="wd-additional-post-article-topic">
-                    The New York Times
-                    <i class="fa-solid fa-circle-check"></i> &nbsp;<span
-                        class="wd-additional-post-time"> · Yesterday</span
-                >
-                </p>
-                <h3 class="wd-additional-post-title">
-                    CNN's Cuomo conundrum: A star anchor with a brother in trouble
-                </h3>
-            </div>
-            <div class="wd-additional-post-more-options">
-                <img
-                        class="wd-additional-post-article-img"
-                        src="../assets/cnn.png"
-                />
-            </div>
-        </div>
-    </div>
-
-    <div class="wd-suggested-post">
-        <div class="wd-suggested-post-container">
-            <div class="wd-suggested-post-article">
-                <p class="wd-suggested-post-article-topic">COVID-19 · Live
-                </p>
-                <h3 class="wd-suggested-post-article-title">COVID-19: News and updates for Massachusetts</h3>
-            </div>
-            <div class="wd-E_article-options">
-                <img
-                        class="wd-additional-post-article-img"
-                        src="../assets/covid.png"
-                />
-            </div>
+            <ul class="list-group">
+                <li class="list-group-item"></li>
+            </ul>
         </div>
 
-        <div class="wd-additional-post">
-            <div class="wd-additional-post-article-container">
-                <div class="wd-additional-post-article">
-                    <p class="wd-additional-post-article-topic">
-                        Bloomberg Opinion
-                        <i class="fa-solid fa-circle-check"></i> &nbsp;<span
-                            class="wd-additional-post-time"
-                    > · Now</span
-                    >
-                    </p>
-                    <h3 class="wd-additional-post-title">
-                        Thinking about getting a booster? Read this first.
-                    </h3>
-                </div>
-                <div class="wd-additional-post-more-options">
-                    <img
-                            class="wd-additional-post-article-img"
-                            src="../assets/bloomberg.png"
-                    />
-                </div>
-            </div>
-        </div>
-
-        <div class="wd-suggested-post">
-            <div class="wd-suggested-post-container">
-                <div class="wd-suggested-post-article">
-                    <p class="wd-suggested-post-article-topic">Trending in United States</p>
-                    <h3 class="wd-suggested-post-article-title">Wonder Bread</h3>
-                    <p class="wd-suggested-post-article-tuits">1,259 Tuits</p>
-                </div>
-                <div class="wd-suggested-post-article-more-options">...</div>
-            </div>
+        <div class="col-xxl-4">
+            <h3>Who to follow</h3>
         </div>
     </div>
 </div>
