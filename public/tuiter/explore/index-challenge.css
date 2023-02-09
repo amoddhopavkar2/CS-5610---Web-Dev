@@ -1,109 +1,109 @@
 .wd-img-round {
-    border-radius: 20%;
+  border-radius: 20%;
 }
 
-.wd-more-options-cog{
-    width: 1em;
-    height: 1em;
-    line-height: 1em;
+.wd-more-options-cog {
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
 }
 
-.wd-ellipsis-small{
-    font-size: small;
+.wd-ellipsis-small {
+  font-size: small;
 }
 
 .wd-follow-btn-lite {
-    background-color: black;
+  background-color: black;
 
-    position: absolute;
-    right: 10px;
-    width: auto;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  right: 10px;
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.wd-text{
-    position: relative;
-    width: auto;
-    z-index: 2;
+.wd-text {
+  position: relative;
+  width: auto;
+  z-index: 2;
 }
 
 .wd-text-color-gray {
-    color: gray;
+  color: gray;
 }
 
-.wd-top-bottom-10px{
-    bottom: 10px;
-    left: 10px;
+.wd-top-bottom-10px {
+  bottom: 10px;
+  left: 10px;
 }
 
-.nav-link .ac{
-    border-bottom: solid 2px blue !important;
+.nav-link .ac {
+  border-bottom: solid 2px blue !important;
 }
 
 .wd-settings-cog {
-    font-size: 25px;
-    color: #1DA1F2;
-    padding: 1px;
+  font-size: 25px;
+  color: #1da1f2;
+  padding: 1px;
 }
 
 .wd-border-none {
-    border: none;
+  border: none;
 }
 
 .wd-border-top-none {
-    border-top: none;
+  border-top: none;
 }
 
 .wd-border-bottom-none {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .wd-icon-blue {
-    color: #1DA1F2;
+  color: #1da1f2;
 }
 
-.wd-border-lightgray{
-    border-color: #F0F0F0;
+.wd-border-lightgray {
+  border-color: #f0f0f0;
 }
 
 .wd-border-rounded-top-left {
-    border-top-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .wd-border-rounded-top-right {
-    border-top-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .wd-border-rounded-bottom-left {
-    border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .wd-border-rounded-bottom-right {
-    border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .wd-bg-color-gray {
-    background-color: #F7F9F9;
+  background-color: #f7f9f9;
 }
 
 .wd-font-weight-500 {
-    font-weight: 500!important;
+  font-weight: 500 !important;
 }
 
 .wd-btn-show-more {
-    color: #1DA1F2;
-    font-weight: 700!important;
-    border: none;
+  color: #1da1f2;
+  font-weight: 700 !important;
+  border: none;
 }
 
 .wd-nav-link-active {
-    font-weight: 700!important;
-    color: black;
-    border-bottom: solid 4px #1DA1F2 !important;
+  font-weight: 700 !important;
+  color: black;
+  border-bottom: solid 4px #1da1f2 !important;
 }
 
 .nav-link:hover {
-    color: black;
-    border-bottom: solid 2px #1DA1F2 !important;
+  color: black;
+  border-bottom: solid 2px #1da1f2 !important;
 }
