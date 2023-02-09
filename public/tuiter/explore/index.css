@@ -1,126 +1,19 @@
-.wd-selected {
-    border-bottom: solid 4px rgb(29, 161, 242);
-    border-bottom-left-radius: 2px ;
-    border-bottom-right-radius: 2px;
-    border-bottom: 2px;
-    padding-bottom:7px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.wd-grey-border-color{
+.wd-border-gray{
     color: #6e767d;
-}
-
-:root{
-    --border-color:#202224;
-}
-
-.wd-primary-bg-color{
-    background-color: black;
-}
-
-.wd-foreground { color: rgb(110, 118, 125); }
-
-.wd-secondary-color{
-    color: #d9d9d9;
-}
-
-.wd-ternary-color{
-    color: #0c6dfd;
-}
-
-.wd-border-bg-color{
-    background-color: #202224;
-}
-.wd-border-color{
-    color: #202224;
-}
-
-.wd-div-class {
-    padding: 15px;
-}
-
-.wd-div-class .wd-h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-}
-
-.wd-div-class .wd-header {
-    font-size: 20px;
-}
-
-.wd-div-class .wd-detailed-messages {
-    margin: 1px;
-    padding: 1px;
-    font-size: 20px;
-    width: 80%;
-    float: left;
-}
-.wd-div-class .wd-view {
-    margin-top: 1px;
-    margin-bottom: 1px;
-    padding: 0;
-    font-size: 13px;
 }
 
 .wd-img-round {
     border-radius: 20%;
 }
 
-.wd-follow-button{
-    right:12px;
-}
-
-.wd-img-div-class {
-    border-radius: 20%;
-    float: right;
-    margin-right: 16px;
-    width: 100px;
-    height: 100px;
-}
-.wd-div-class-with-images{
-    width: 80%;
-    height: 100%;
-    float: left;
-}
-.wd-title-bar {
-    border: 1px solid rgb(47, 51, 54);
-}
-.wd-icon{
-    color: darkgray;
-    text-decoration: None;
-}
-
-.wd-more-icon{
+.wd-more-options-cog{
     width: 1em;
     height: 1em;
     line-height: 1em;
 }
+
 .wd-ellipsis-small{
     font-size: small;
-}
-
-.wd-follow-button-style{
-    position: absolute;
-    right: 10px;
-    width: auto;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 0;
-    background-color: #d9d9d9;
-    color: black;
-}
-
-.wd-rounded-corner-top{
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
-
-.wd-rounded-corner-bottom{
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
 }
 
 .wd-follow-btn-lite {
@@ -130,42 +23,24 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
 .wd-text{
     position: relative;
     width: auto;
     z-index: 2;
 }
 
-.wd-text-color {
-    color: grey;
+.wd-text-color-gray {
+    color: gray;
 }
 
-.wd-text-and-image{
+.wd-top-bottom-10px{
     bottom: 10px;
     left: 10px;
 }
 
-.wd-active-lite {
-    font-weight: bold;
-    background-color: black;
-    color: #d9d9d9;
-    border: 0;
-}
-.wd-white-type:focus {
-    color: #fff;
-}
-
 .nav-link .ac{
     border-bottom: solid 2px blue !important;
-}
-
-.wd-custom-border{
-    border-left: 1px solid #202224;
-    border-right: 1px solid var(--border-color);
-}
-
-.wd-width-35p{
-    width: 35px;
 }
 
 .wd-settings-cog {
