@@ -37,10 +37,6 @@
   left: 10px;
 }
 
-.nav-link .ac {
-  border-bottom: solid 2px blue !important;
-}
-
 .wd-settings-cog {
   font-size: 25px;
   color: #1da1f2;
@@ -61,6 +57,7 @@
 
 .wd-icon-blue {
   color: #1da1f2;
+  font-size: 26px;
 }
 
 .wd-border-lightgray {
@@ -91,6 +88,10 @@
   font-weight: 500 !important;
 }
 
+.wd-font-weight-750 {
+  font-weight: 750 !important;
+}
+
 .wd-btn-show-more {
   color: #1da1f2;
   font-weight: 700 !important;
@@ -104,6 +105,23 @@
 }
 
 .nav-link:hover {
-  color: black;
-  border-bottom: solid 2px #1da1f2 !important;
+  background-color: #f7f9f9;
+  color: gray;
+}
+
+.wd-tuiter-signature-blue {
+  background-color: #1da1f2;
+}
+
+.btn:hover {
+  background-color: #1da1f2;
+  border: none;
+} 
+
+.wd-font-size-18 {
+  font-size: 20px;
+}
+
+.wd-font-weight-300 {
+  font-weight: 300;
 }
