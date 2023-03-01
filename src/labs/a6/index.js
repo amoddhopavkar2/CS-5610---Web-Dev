@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import Classes from "./classes";
 import Styles from "./styles";
 import ConditionalOutput from "./conditional-output";

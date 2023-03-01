@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import Nav from "../../nav";
 function HelloWorld() {
   return (

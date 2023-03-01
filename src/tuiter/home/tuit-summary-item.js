@@ -1,99 +1,112 @@
+import React, {Component} from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faComment, faHeart} from "@fortawesome/free-regular-svg-icons";
+import {
+    faRetweet,
+    faCircleCheck,
+    faArrowUpFromBracket,
+} from "@fortawesome/free-solid-svg-icons";
+
 const TuitSummaryItem = ({
-  tuit = {
-    _id: 123,
-    profileName: "Elon Musk",
-    handleName: "@elonMusk",
-    date: "2h",
-    content: "Falcon in the winter, soldiers!",
-    profileImg: "../assets/elonmusk.jpg",
-    postImg: "../assets/spacex.jpg",
-    postImgContentTitle: "SpaceX releases the FALCON 2023",
-    postImgContent: "SpaceX release enjoy",
-  },
-}) => {
-  let imageContentHide = false;
-  if (tuit.postImgContentTitle === "") {
-    imageContentHide = true;
-  }
-  return (
-    <div className="wd-post_container">
-      <div className="wd-B__image">
-        <img
-          className="wd-B__profile-img"
-          src={`${tuit.profileImg}`}
-        />
-      </div>
-      <div className="wd-mid-segment-container">
-        <div className="wd-C_container">
-          <div className="wd-C__profile-info">
-            <h4 className="wd-C__profile-name">
-              {tuit.profileName}{" "}
-              <i
-                className="fas fa-check-circle wd-sky-blue"
-                aria-hidden="true"
-              ></i>
-            </h4>
-            <h4 className="wd-C__handle-name">&nbsp;{tuit.handleName}</h4>
-            <h4 className="wd-C__handle-name">
-              &nbsp;<span className="wd-dot">&#183;</span>&nbsp;{tuit.date}
-            </h4>
-          </div>
-          <div className="wd-C__options">...</div>
+                             tuit = {
+                                 _id: 123,
+                                 username: "Elon Musk",
+                                 handle: "@elonMusk",
+                                 timestamp: "2h",
+                                 content: "Falcon in the winter, soldiers!",
+                                 profilePicture: "../assets/elonmusk.jpg",
+                                 previewImage: "../assets/spacex.jpg",
+                                 previewTitle: "SpaceX releases the FALCON 2023",
+                                 previewContent: "SpaceX release enjoy",
+                                 comments: "595",
+                                 retuits: "1,168",
+                                 likes: "11.1K",
+                             },
+                         }) => {
+    let imageContentHide = false;
+    if (tuit.previewTitle === "") {
+        imageContentHide = true;
+    }
+    return (
+        <div className="wd-tuit-container">
+            <div className="wd-profile-pic-container">
+                <img className="wd-profile-pic-rounded" src={`${tuit.profilePicture}`}/>
+            </div>
+            <div className="wd-tuit-content-container">
+                <div className="wd-tuiter-user-handle-container">
+                    <div className="wd-tuiter-user-handle">
+                        <h4 className="wd-tuiter-username">
+                            {tuit.username}{" "}
+                            <span className="wd-tuiter-blue"><FontAwesomeIcon icon={faCircleCheck}/></span>
+                        </h4>
+                        <h4 className="wd-tuiter-handle">&nbsp;{tuit.handle}</h4>
+                        <h4 className="wd-tuiter-handle">
+                            &nbsp;<span className="wd-dot">&#183;</span>&nbsp;{tuit.timestamp}
+                        </h4>
+                    </div>
+                    <div className="wd-more-options">...</div>
+                </div>
+                <div className="wd-tuit-tuit-container">
+                    <div className="wd-tuit-tuit">
+                        <p>{tuit.content}</p>
+                    </div>
+                </div>
+                <div className="wd-tuit-preview-container" id="image-info">
+                    <div className="wd-tuit-preview-image">
+                        <img src={`${tuit.previewImage}`} width="100%"/>
+                    </div>
+                    <div
+                        className={
+                            imageContentHide ? "wd-is-hidden" : "wd-tuit-preview-content"
+                        }
+                    >
+                        <div className="wd-tuit-preview-content-title">
+                            {tuit.previewTitle}
+                        </div>
+                        <div className="wd-tuit-preview-content-content">
+                            {tuit.previewContent}
+                        </div>
+                    </div>
+                </div>
+                <div className="wd-tuit-buttons-container">
+                    <div className="wd-tuit-buttons">
+                        <p className="wd-icons">
+                            <a href="#" className="wd-light-gray">
+                                <FontAwesomeIcon icon={faComment}/>
+                                <p className="wd-padding-12">{tuit.comments}</p>
+                            </a>
+                        </p>
+                    </div>
+                    <div className="wd-tuit-buttons">
+                        <p className="wd-icons">
+                            <a href="#" className="wd-light-gray">
+                                <FontAwesomeIcon icon={faRetweet}/>
+                                <p className="wd-padding-12">{tuit.retuits}</p>
+                            </a>
+                        </p>
+                    </div>
+                    <div className="wd-tuit-buttons">
+                        <div className="wd-icons">
+                            <a href="#" className="wd-light-gray">
+                                <FontAwesomeIcon icon={faHeart}/>
+                                <p className="wd-padding-12">{tuit.likes}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="wd-tuit-buttons">
+                        <p className="wd-icons">
+                            <a href="#" className="wd-light-gray">
+                                <FontAwesomeIcon icon={faArrowUpFromBracket}/>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div className={!tuit.isThread ? "wd-is-hidden" : "wd-tuiter-blue"}>
+                    <a href="#"> show this thread</a>
+                </div>
+            </div>
         </div>
-        <div className="wd-D__container">
-          <div className="wd-D__text">
-            <p>{tuit.content}</p>
-          </div>
-        </div>
-        <div className="wd-E-F__container" id="image-info">
-          <div className="wd-E__image">
-            <img src={`${tuit.postImg}`} width="100%" />
-          </div>
-          <div className={imageContentHide ? "wd-hidden" : "wd-F__container"}>
-            <div className="wd-F__title">{tuit.postImgContentTitle}</div>
-            <div className="wd-F__text">{tuit.postImgContent}</div>
-          </div>
-        </div>
-        <div className="wd-G_container">
-          <div className="wd-post-info">
-            <p className="wd-icons">
-              <a href="#" className="wd-link">
-                <i className="fa-regular fa-comment"></i>
-                <p className="wd-numbers">123</p>
-              </a>
-            </p>
-          </div>
-          <div className="wd-post-info">
-            <p className="wd-icons">
-              <a href="#" className="wd-link">
-                <i className="fa-solid fa-retuit"></i>
-                <p className="wd-numbers">123</p>
-              </a>
-            </p>
-          </div>
-          <div className="wd-post-info">
-            <p className="wd-icons">
-              <a href="#" className="wd-link">
-                {" "}
-                <i className="fa-solid fa-heart red"></i>
-                <p className="wd-numbers">123</p>
-              </a>
-            </p>
-          </div>
-          <div className="wd-post-info">
-            <p className="wd-icons">
-              <a href="#" className="wd-link">
-                <i className="fa-solid fa-arrow-up-from-bracket"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-        <div className={!tuit.isThread ? "wd-hidden" : "wd-thread"}>
-          <a href="#"> show this thread</a>
-        </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default TuitSummaryItem;
