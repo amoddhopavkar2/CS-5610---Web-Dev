@@ -6,7 +6,8 @@ function Nav() {
     <div>
       <Link to="/">Labs</Link> |
       <Link to="/hello">Hello</Link> |
-      <Link to="/tuiter/explore">Tuiter</Link>
+      <Link to="/tuiter/explore">Tuiter - Explore</Link> |
+      <Link to="/tuiter/home">Tuiter - Home [Challenge]</Link>
     </div>
   );
 }
