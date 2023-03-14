@@ -4,42 +4,87 @@ import { useLocation } from "react-router";
 
 const NavigationSidebar = () => {
   const { pathname } = useLocation();
-  const paths = pathname.split("/");
-  const active = paths[2];
+  const paths = pathname.split('/')
+  // home is active tab by default
+  const active = paths[2] ?? "home";
   return (
     <div className="list-group">
-      <a className="list-group-item">Tuiter</a>
-      <Link
-        to="/tuiter/home"
-        className={`list-group-item ${active === "home" ? "active" : ""}`}
-      >
-        Home
-      </Link>
-      <Link
-        to="/tuiter/explore"
-        className={`list-group-item ${active === "explore" ? "active" : ""}`}
-      >
-        Explore
-      </Link>
-      <Link to="/" className="list-group-item">
-        Labs
-      </Link>
-      <a className={`list-group-item ${active === "more" ? "active" : ""}`}>
-        Messages
-      </a>
-      <a className={`list-group-item ${active === "more" ? "active" : ""}`}>
-        Bookmarks
-      </a>
-      <a className={`list-group-item ${active === "more" ? "active" : ""}`}>
-        Lists
-      </a>
-      <a className={`list-group-item ${active === "more" ? "active" : ""}`}>
-        Profile
-      </a>
-      <a className={`list-group-item ${active === "more" ? "active" : ""}`}>
-        More
-      </a>
+      <div className="list-group-item list-group-item-action">
+      <div className="d-flex">
+      <div><i className="fab fa-twitter"></i></div>
+      <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">
+                    Tuiter
+                </div>
+      </div>
+        </div>
+        <Link to="/tuiter" className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>
+            <div className="d-flex  ">
+                <div><i className=" fas fa-home"></i></div>
+                <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">
+                    Home
+                </div>
+            </div>
+        </Link>
+        <Link to="/tuiter/explore" className={`list-group-item list-group-item-action ${active === 'explore' ? 'active' : ''}`}>
+            <div className="d-flex align-items-center ">
+                <i className="fas fa-hashtag"></i>
+                <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">Explore</div>
+            </div>
+        </Link>
+        <Link to="/" className={`list-group-item list-group-item-action ${active === 'labs' ? 'active' : ''}`}>
+            <div className="d-flex  ">
+                <div><i className="fa-solid fa-computer"></i></div>
+                <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">
+                    Labs
+                </div>
+            </div>
+        </Link>
+        <Link className={`list-group-item list-group-item-action ${active === 'notifications' ? 'active' : ''}`}>
+            <div className="d-flex align-items-center">
+                <i className="fas fa-bell"></i>
+                <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">Notifications</div>
+            </div>
+        </Link>
+        <Link className={`list-group-item list-group-item-action ${active === 'messages' ? 'active' : ''}`}>
+            <div className="d-flex align-items-center ">
+                <i className="fas fa-envelope"></i>
+                <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">Messages</div>
+            </div>
+        </Link>
+        <Link  className={`list-group-item list-group-item-action ${active === 'bookmarks' ? 'active' : ''}`}>
+            <div className="d-flex align-items-center">
+                <i className="fas fa-bookmark"></i>
+                <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">
+                    Bookmarks
+                </div>
+            </div>
+        </Link>
+        <Link  className={`list-group-item list-group-item-action ${active === 'lists' ? 'active' : ''}`}>
+            <div className="d-flex align-items-center">
+                <i className="fas fa-list"></i>
+                <div className="d-none  d-xl-block d-xxl-block ms-1 wd-pd-5">
+                    Lists
+                </div>
+            </div>
+        </Link>
+        <Link to="/tuiter/profile" className={`list-group-item list-group-item-action  ${active === 'profile' ? 'active' : ''}`}>
+            <div className="d-flex align-items-center">
+                <i className="fas fa-user"></i>
+                <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">
+                    Profile
+                </div>
+            </div>
+        </Link>
+        <Link  className={`list-group-item list-group-item-action ${active === 'more' ? 'active' : ''}`}>
+            <div className="d-flex align-items-center">
+                <i className="fa-solid fa-ellipsis"></i>
+                <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">
+                    More
+                </div>
+            </div>
+        </Link>
     </div>
   );
+
 };
 export default NavigationSidebar;

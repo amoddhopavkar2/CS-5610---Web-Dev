@@ -1,0 +1,27 @@
+[
+    {
+        "_id": 123,
+        "profileName": "Elon Musk",
+        "handleName": "@elonMusk",
+        "date": "2h",
+        "content": "As a lifelong Manchester United fan, I feel they've deliberately humiliated Cristiano Ronaldo this season. Hence, the club & the manager have no moral high ground to complain about him walking off the pitch. They treated him like trash & he gave it back to them.",
+        "profileImg": "elon.png",
+        "postImg": "ronaldo-news.jpeg",
+        "postImgContentTitle": "",
+        "postImgContent": "",
+        "isThread":true
+
+    },
+    {
+        "_id": 124,
+        "profileName": "New York Post",
+        "handleName": "@nyPost",
+        "date": "Yesterday",
+        "content": "Two employees have been killed in a shooting at a Dallas hospital, according to police",
+        "profileImg": "nypost.jpeg",
+        "postImg": "shooting.jpeg",
+        "postImgContentTitle": "2 employees were killed in a Dallas hospital shooting | CNN",
+        "postImgContent": "Two employees were killed in saturday morning in a shooting at a Dallas hospital, the locality health system said",
+        "isThread":false
+    }
+]
