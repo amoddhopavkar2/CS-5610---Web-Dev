@@ -6,7 +6,7 @@ const NavigationSidebar = () => {
   const { pathname } = useLocation();
   const paths = pathname.split('/')
   // home is active tab by default
-  const active = paths[2] ?? "home";
+  const active = "home";
   return (
     <div className="list-group">
       <div className="list-group-item list-group-item-action">
