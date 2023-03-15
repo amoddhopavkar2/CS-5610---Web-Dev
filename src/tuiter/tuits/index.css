@@ -1,162 +1,158 @@
 .wd-A__title {
-    margin: auto;
-    color: black;
-    font-size: 20px;
+  margin: auto;
+  color: black;
+  font-size: 20px;
 }
 
 .wd-A__handle {
-    margin: auto;
-    color: lightgray;
-    font-size: 13px;
+  margin: auto;
+  color: lightgray;
+  font-size: 13px;
 }
 
 .wd-tuit-container {
-    border: 1px solid rgba(0, 0, 0, 0.125);
-
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .wd-tuit-container:first-child {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .wd-tuit-content-container {
-    padding-left: 16px;
-    padding-top: 12px;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
+  padding-left: 16px;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
 }
 
 .wd-B__profile-img {
-    border-radius: 48px;
-    height: 48px;
-    width: 48px;
+  border-radius: 48px;
+  height: 48px;
+  width: 48px;
 }
 
 .wd-mid-segment-container {
-    display: flex;
-    flex-direction: column;
-    padding-left: 12px;
-    width: 90%;
-    margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+  width: 90%;
+  margin-bottom: 12px;
 }
 
 .wd-C_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .wd-C__profile-info {
-    width: 88%;
+  width: 88%;
 }
 
-.wd-C__profile-info>h4,
+.wd-C__profile-info > h4,
 h3 {
-    display: inline;
+  display: inline;
 }
 
 .wd-C__profile-name {
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .wd-C__handle-name {
-    color: rgb(89, 101, 114);
-    font-size: 15px;
+  color: rgb(89, 101, 114);
+  font-size: 15px;
 }
 
 .wd-C__post-date {
-    color: rgb(89, 101, 114);
+  color: rgb(89, 101, 114);
 }
 
 .wd-C__options {
-    width: 10.8%;
+  width: 10.8%;
 }
 
 .wd-D__text {
-    text-align: justify;
-    text-justify: inter-word;
-    margin: 0px;
-    max-width: 506px;
-    padding-right: 16px;
-    padding-bottom: 12px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0px;
+  max-width: 506px;
+  padding-right: 16px;
+  padding-bottom: 12px;
 }
 
 .wd-E-F__container {
-    border: 1px solid rgb(47, 51, 54);
-    /* border-radius: 10px; */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    width: 100%;
-
+  border: 1px solid rgb(47, 51, 54);
+  /* border-radius: 10px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
 }
 
-.wd-E__image>img {
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+.wd-E__image > img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
-
 
 .wd-F__title {
-    margin: auto;
-    padding: 12px;
-    font-size: 15px;
-
+  margin: auto;
+  padding: 12px;
+  font-size: 15px;
 }
 
 .wd-F__text {
-    padding: 0px 12px 12px 12px;
-    margin: auto;
-    color: rgb(47, 51, 54);
+  padding: 0px 12px 12px 12px;
+  margin: auto;
+  color: rgb(47, 51, 54);
 }
 
 .wd-G_container {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .wd-post-info {
-    margin: auto;
+  margin: auto;
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .wd-icons {
-    color: rgb(89, 101, 114);
+  color: rgb(89, 101, 114);
 }
 
 .wd-numbers {
-    padding-left: 12px;
-    display: inline;
+  padding-left: 12px;
+  display: inline;
 }
 
 .wd-post-info {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .wd-link {
-    color: rgb(89, 101, 114);
+  color: rgb(89, 101, 114);
 }
 
 .red {
-    color: red;
+  color: red;
 }
 
 .wd-sky-blue {
-    padding-left: 8px;
-    color: deepskyblue;
+  padding-left: 8px;
+  color: deepskyblue;
 }
 
 .wd-tuit-delete {
-    background-color: white;
-    border: none;
+  background-color: white;
+  border: none;
 }
