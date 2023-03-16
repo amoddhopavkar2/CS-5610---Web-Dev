@@ -2,12 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComment, faHeart } from "@fortawesome/free-regular-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import {
-  faRetweet,
-  faCircleCheck,
-  faArrowUpFromBracket,
+  faAsterisk,
+  faEllipsis,
+  faHashtag,
+  faHouse,
+  faList,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBell,
+  faBookmark,
+  faEnvelope,
+  faUser,
+} from "@fortawesome/free-regular-svg-icons";
 
 const NavigationSidebar = () => {
   const { pathname } = useLocation();
@@ -18,7 +26,7 @@ const NavigationSidebar = () => {
       <div className="list-group-item list-group-item-action">
         <div className="d-flex">
           <div>
-            <i className="fab fa-twitter"></i>
+            <FontAwesomeIcon icon={faTwitter} />
           </div>
           <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">
             Tuiter
@@ -33,7 +41,7 @@ const NavigationSidebar = () => {
       >
         <div className="d-flex  ">
           <div>
-            <i className=" fas fa-home"></i>
+            <FontAwesomeIcon icon={faHouse} />
           </div>
           <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">Home</div>
         </div>
@@ -45,7 +53,7 @@ const NavigationSidebar = () => {
         }`}
       >
         <div className="d-flex align-items-center ">
-          <i className="fas fa-hashtag"></i>
+          <FontAwesomeIcon icon={faHashtag} />
           <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">
             Explore
           </div>
@@ -59,7 +67,7 @@ const NavigationSidebar = () => {
       >
         <div className="d-flex  ">
           <div>
-            <i className="fa-solid fa-computer"></i>
+            <FontAwesomeIcon icon={faAsterisk} />
           </div>
           <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">Labs</div>
         </div>
@@ -70,7 +78,7 @@ const NavigationSidebar = () => {
         }`}
       >
         <div className="d-flex align-items-center">
-          <i className="fas fa-bell"></i>
+          <FontAwesomeIcon icon={faBell} />
           <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">
             Notifications
           </div>
@@ -82,7 +90,7 @@ const NavigationSidebar = () => {
         }`}
       >
         <div className="d-flex align-items-center ">
-          <i className="fas fa-envelope"></i>
+          <FontAwesomeIcon icon={faEnvelope} />
           <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">
             Messages
           </div>
@@ -94,7 +102,7 @@ const NavigationSidebar = () => {
         }`}
       >
         <div className="d-flex align-items-center">
-          <i className="fas fa-bookmark"></i>
+          <FontAwesomeIcon icon={faBookmark} />
           <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">
             Bookmarks
           </div>
@@ -106,7 +114,7 @@ const NavigationSidebar = () => {
         }`}
       >
         <div className="d-flex align-items-center">
-          <i className="fas fa-list"></i>
+          <FontAwesomeIcon icon={faList} />
           <div className="d-none  d-xl-block d-xxl-block ms-1 wd-pd-5">
             Lists
           </div>
@@ -119,7 +127,7 @@ const NavigationSidebar = () => {
         }`}
       >
         <div className="d-flex align-items-center">
-          <i className="fas fa-user"></i>
+          <FontAwesomeIcon icon={faUser} />
           <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">
             Profile
           </div>
@@ -131,7 +139,7 @@ const NavigationSidebar = () => {
         }`}
       >
         <div className="d-flex align-items-center">
-          <i className="fa-solid fa-ellipsis"></i>
+          <FontAwesomeIcon icon={faEllipsis} />
           <div className="d-none d-xl-block d-xxl-block ms-1 wd-pd-5">More</div>
         </div>
       </Link>
