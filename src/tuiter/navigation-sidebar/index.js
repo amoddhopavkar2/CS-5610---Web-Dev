@@ -1,6 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faComment, faHeart } from "@fortawesome/free-regular-svg-icons";
+import {
+  faRetweet,
+  faCircleCheck,
+  faArrowUpFromBracket,
+} from "@fortawesome/free-solid-svg-icons";
 
 const NavigationSidebar = () => {
   const { pathname } = useLocation();

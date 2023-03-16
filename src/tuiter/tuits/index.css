@@ -26,7 +26,6 @@
   flex-direction: column;
   padding-left: 12px;
   width: 90%;
-  margin-bottom: 12px;
 }
 
 .wd-tuit-tuit-topbar-container {
@@ -61,7 +60,6 @@ h3 {
   margin: 0px;
   max-width: 506px;
   padding-right: 16px;
-  padding-bottom: 12px;
 }
 
 .wd-tuiter-tuit-stats-container {
@@ -98,4 +96,13 @@ a:link {
 .wd-tuit-delete-tuit {
   background-color: white;
   border: none;
+}
+
+.wd-tuiter-blue {
+  color: rgb(29, 161, 242);
+}
+
+.wd-padding-left-right-8px {
+  padding-left: 8px;
+  padding-right: 8px;
 }
