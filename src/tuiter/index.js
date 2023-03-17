@@ -1,48 +1,46 @@
-import {Route} from "react-router-dom";
-import Nav from "../nav";
+import { Route } from "react-router-dom";
 import NavigationSidebar from "./navigation-sidebar";
 import ExploreComponent from "./explore";
 import WhoToFollowList from "./who-to-follow-list";
-import {Routes} from "react-router-dom";
+import { Routes } from "react-router-dom";
 import HomeComponent from "./home";
-
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
 import profileReducer from "./profile/profile-reducer";
-import {configureStore} from "@reduxjs/toolkit";
-import {Provider} from "react-redux";
+import { configureStore } from "@reduxjs/toolkit";
+import { Provider } from "react-redux";
 import ProfileComponent from "./profile";
 import EditProfileComponent from "./profile/edit-profile";
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 const store = configureStore({
-    reducer: {who: whoReducer, tuits: tuitsReducer, profile: profileReducer},
+  reducer: { who: whoReducer, tuits: tuitsReducer, profile: profileReducer },
 });
 
 function Tuiter() {
-    return (
-        <Provider store={store}>
-            <div className="row mt-2">
-                <div className="col-2 col-md-2 col-lg-1 col-xl-2">
-                    <NavigationSidebar active="explore"/>
-                </div>
-                <div
-                    className="col-10 col-md-10 col-lg-7 col-xl-6"
-                    style={{position: "relative; padding:0px;border:1px solid black"}}
-                >
-                    <Routes>
-                        <Route path="explore" element={<ExploreComponent/>}/>
-                        <Route index element={<HomeComponent/>}/>
-                        <Route path="profile" element={<ProfileComponent/>}/>
-                        <Route path="edit-profile" element={<EditProfileComponent/>}/>
-                    </Routes>
-                </div>
-                <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                    <WhoToFollowList/>
-                </div>
-            </div>
-        </Provider>
-    );
+  return (
+    <Provider store={store}>
+      <div className="row mt-2">
+        <div className="col-2 col-md-2 col-lg-1 col-xl-2">
+          <NavigationSidebar active="explore" />
+        </div>
+        <div
+          className="col-10 col-md-10 col-lg-7 col-xl-6"
+          style={{ position: "relative; padding:0px;border:1px solid black" }}
+        >
+          <Routes>
+            <Route path="explore" element={<ExploreComponent />} />
+            <Route index element={<HomeComponent />} />
+            <Route path="profile" element={<ProfileComponent />} />
+            <Route path="edit-profile" element={<EditProfileComponent />} />
+          </Routes>
+        </div>
+        <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
+          <WhoToFollowList />
+        </div>
+      </div>
+    </Provider>
+  );
 }
 
 export default Tuiter;
