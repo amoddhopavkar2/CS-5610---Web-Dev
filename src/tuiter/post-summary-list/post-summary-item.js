@@ -6,7 +6,7 @@ const PostSummaryItem = ({
     time: "2h",
     title:
       "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-    image: "tesla.jpg",
+    image: "tesla_2.jpg",
   },
 }) => {
   console.log(post);
