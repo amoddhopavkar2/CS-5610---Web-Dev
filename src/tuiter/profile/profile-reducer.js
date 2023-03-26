@@ -1,17 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
-import profile from "./profile.json";
+import profile from './profile.json'
 
 const profileSlice = createSlice({
-  name: "profile",
-  initialState: profile,
-  reducers: {
-    updateProfile(state, action) {
-      return {
-        ...state,
-        ...action.payload,
-      };
-    },
-  },
+    name: 'profile',
+    initialState: profile,
+    reducers: {
+        updateProfile(state, action) {
+            return {
+                ...state,
+                ...action.payload
+            }
+        },
+    }
 });
 
 export const { updateProfile } = profileSlice.actions;

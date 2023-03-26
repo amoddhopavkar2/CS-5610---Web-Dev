@@ -1,34 +1,29 @@
 import React from "react";
-
-const WhoToFollowListItem = ({
-                                 who = {userName: "NASA", handle: "NASA", avatarIcon: "nasa.jpg"},
-                             }) => {
+const WhoToFollowListItem = (
+ {
+   who = { userName: 'NASA', handle: 'NASA', avatarIcon: 'nasa.jpg' }
+ }
+) => {
     const imgStyle = {
         borderRadius: "48px",
         height: "48px",
-        width: "48px",
+        width: "48px"
     };
-    return (
-        <li className="list-group-item">
-            <div className="row">
-                <div className="col-2">
-                    <img
-                        className="rounded-circle"
-                        style={imgStyle}
-                        src={require(`../images/${who.avatarIcon}`)}
-                    />
-                </div>
-                <div className="col-8">
-                    <div className="fw-bold">{who.userName}</div>
-                    <div>@{who.handle}</div>
-                </div>
-                <div className="col-2">
-                    <button className="btn btn-primary rounded-pill float-end">
-                        Follow
-                    </button>
-                </div>
-            </div>
-        </li>
-    );
+ return(
+  <li className="list-group-item">
+   <div className="row">
+     <div className="col-2">
+       <img className="rounded-circle" style={imgStyle} src={require(`../images/${who.avatarIcon}`)}/>
+     </div>
+     <div className="col-8">
+       <div className="fw-bold">{who.userName}</div>
+       <div>@{who.handle}</div>
+     </div>
+     <div className="col-2">
+       <button className="btn btn-primary rounded-pill float-end">Follow</button>
+     </div>
+   </div>
+  </li>
+ );
 };
 export default WhoToFollowListItem;
