@@ -48,13 +48,7 @@ const TuitItem = ({ tuit }) => {
           </div>
         </div>
       </div>
-      <TuitStats
-        liked={tuit.liked}
-        likes={tuit.likes}
-        replies={tuit.replies}
-        retuits={tuit.retuits}
-        tuit={tuit}
-      ></TuitStats>
+      <TuitStats liked={tuit.liked} likes={tuit.likes} replies={tuit.replies} retuits={tuit.retuits} tuit={tuit}></TuitStats>
     </div>
   );
 };
