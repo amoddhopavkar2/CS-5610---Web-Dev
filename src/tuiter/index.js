@@ -13,6 +13,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from "react-redux";
 import ProfileComponent from "./profile";
 import EditProfileComponent from "./profile/edit-profile";
+import React, { Component }  from 'react';
 const store = configureStore(
   {
     reducer:
