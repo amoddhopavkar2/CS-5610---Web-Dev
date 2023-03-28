@@ -4,8 +4,17 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { updateTuitThunk } from "../../services/tuits-thunks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComment, faHeart, faThumbsDown } from "@fortawesome/free-regular-svg-icons";
-import { faRetweet, faArrowUpFromBracket, faThumbsDown as faSolidThumbsDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faComment,
+  faHeart,
+  faThumbsDown,
+} from "@fortawesome/free-regular-svg-icons";
+import {
+  faRetweet,
+  faArrowUpFromBracket,
+  faHeart as faSolidHeart,
+  faThumbsDown as faSolidThumbsDown,
+} from "@fortawesome/free-solid-svg-icons";
 
 const TuitStats = ({ tuit }) => {
   const dispatch = useDispatch();
@@ -75,11 +84,28 @@ const TuitStats = ({ tuit }) => {
       </div>
 
       <div className="wd-tuiter-tuit-icon-container">
+        <p onClick={toggleLike} className="wd-tuiter-tuit-icon">
+          <a href="#" className="wd-link">
+            {tuit.liked && (
+              <span class="wd-red">
+                <FontAwesomeIcon icon={faSolidHeart} />
+              </span>
+            )}
+            {!tuit.liked && <FontAwesomeIcon icon={faHeart} />}
+            &nbsp;
+            {tuit.likes}
+          </a>
+        </p>
+      </div>
+
+      <div className="wd-tuiter-tuit-icon-container">
         <p onClick={toggleDislike} className="wd-tuiter-tuit-icon">
-          {tuit.disliked && <FontAwesomeIcon icon={faSolidThumbsDown} />}
-          {!tuit.disliked && <FontAwesomeIcon icon={faThumbsDown} />}
-          &nbsp;
-          {tuit.dislikes}
+          <a href="#" className="wd-link">
+            {tuit.disliked && <FontAwesomeIcon icon={faSolidThumbsDown} />}
+            {!tuit.disliked && <FontAwesomeIcon icon={faThumbsDown} />}
+            &nbsp;
+            {tuit.dislikes}
+          </a>
         </p>
       </div>
 
