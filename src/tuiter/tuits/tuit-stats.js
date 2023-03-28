@@ -4,11 +4,8 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { updateTuitThunk } from "../../services/tuits-thunks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComment, faHeart } from "@fortawesome/free-regular-svg-icons";
-import {
-  faRetweet,
-  faArrowUpFromBracket,
-} from "@fortawesome/free-solid-svg-icons";
+import { faComment, faHeart, faThumbsDown } from "@fortawesome/free-regular-svg-icons";
+import { faRetweet, faArrowUpFromBracket, faThumbsDown as faSolidThumbsDown } from "@fortawesome/free-solid-svg-icons";
 
 const TuitStats = ({ tuit }) => {
   const dispatch = useDispatch();
@@ -30,6 +27,24 @@ const TuitStats = ({ tuit }) => {
         );
   };
 
+  const toggleDislike = () => {
+    tuit.disliked === false
+      ? dispatch(
+          updateTuitThunk({
+            ...tuit,
+            dislikes: tuit.dislikes + 1,
+            disliked: true,
+          })
+        )
+      : dispatch(
+          updateTuitThunk({
+            ...tuit,
+            dislikes: tuit.dislikes - 1,
+            disliked: false,
+          })
+        );
+  };
+
   return (
     <div className="wd-tuiter-tuit-stats-container">
       <div className="wd-tuiter-tuit-icon-container">
@@ -40,6 +55,7 @@ const TuitStats = ({ tuit }) => {
           </a>
         </p>
       </div>
+
       <div className="wd-tuiter-tuit-icon-container">
         <p className="wd-tuiter-tuit-icon">
           <a href="#" className="wd-link">
@@ -48,6 +64,7 @@ const TuitStats = ({ tuit }) => {
           </a>
         </p>
       </div>
+
       <div className="wd-tuiter-tuit-icon-container">
         <p className="wd-tuiter-tuit-icon">
           <a href="#" className="wd-link">
@@ -56,6 +73,16 @@ const TuitStats = ({ tuit }) => {
           </a>
         </p>
       </div>
+
+      <div className="wd-tuiter-tuit-icon-container">
+        <p onClick={toggleDislike} className="wd-tuiter-tuit-icon">
+          {tuit.disliked && <FontAwesomeIcon icon={faSolidThumbsDown} />}
+          {!tuit.disliked && <FontAwesomeIcon icon={faThumbsDown} />}
+          &nbsp;
+          {tuit.dislikes}
+        </p>
+      </div>
+
       <div className="wd-tuiter-tuit-icon-container">
         <p className="wd-tuiter-tuit-icon">
           <a href="#" className="wd-link">
