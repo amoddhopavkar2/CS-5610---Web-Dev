@@ -75,15 +75,6 @@ const TuitStats = ({ tuit }) => {
       </div>
 
       <div className="wd-tuiter-tuit-icon-container">
-        <p className="wd-tuiter-tuit-icon">
-          <a href="#" className="wd-link">
-            <FontAwesomeIcon icon={faHeart} />
-            <p className="wd-numbers">{tuit.likes}</p>
-          </a>
-        </p>
-      </div>
-
-      <div className="wd-tuiter-tuit-icon-container">
         <p onClick={toggleLike} className="wd-tuiter-tuit-icon">
           <a href="#" className="wd-link">
             {tuit.liked && (
