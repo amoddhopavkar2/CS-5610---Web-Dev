@@ -12,7 +12,6 @@ const PostSummaryList = () => {
   }, []);
   return (
     <ul className="list-group">
-      console.log(tuits.map)
       {tuits.map((post) => (
         <PostSummaryItem key={post._id} post={post} />
       ))}
