@@ -17,6 +17,7 @@ const templateTuit = {
   replies: 0,
   retuits: 0,
   likes: 0,
+  title: "",
 };
 
 export const findTuitsThunk = createAsyncThunk(
